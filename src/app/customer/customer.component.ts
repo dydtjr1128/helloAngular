@@ -18,7 +18,7 @@ export class CustomerComponent implements OnInit {
   getCustomers() {
      this.dataService.getCustomers().then(customers => this.customers = customers);//Async, getCustomers()까지 하면 promise형태
   }
- 
+  
   ngOnInit(): void {
      this.getCustomers();
   }
